@@ -12,10 +12,13 @@
         margin :0;
         padding:0;
         background-image: url('https://i.pinimg.com/originals/20/e1/1c/20e11cea9fcc9a9fb5c07efd72afaae9.gif');
-
-         background-attachment: fixed;
+        background-attachment: fixed;
+        background-position: center;
         background-size: cover;
-        background-size: 500px 470px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
       
       }
       h2{
@@ -29,9 +32,9 @@
       h3{
         text-align: center;
         height:30px;
-        padding: 15px;
+        padding: 5px auto;
         font-family: 'Montserrat';
-
+        color: #5C5470;
       }
       h1{
         text-align: center;
@@ -41,10 +44,8 @@
         font-size: 1.5rem;
       }
       .container{
-        width:60%;
-        height:40%;
-        margin:auto;
-        margin-top: 110px;
+       
+        text-align: center;
 
       }
       h4{
@@ -53,17 +54,39 @@
         font-family: 'Ubuntu';
 
       }
+      button[type="submit"] {
+        background-color: #0056b3; 
+        color: #fff; 
+        border: 2px solid #556a6c; 
+        border-radius: 5px; 
+        padding: 10px 20px; 
+        font-size: 16px;
+        margin-top: 30px;
+        }
+
+        /* Style the button on hover */
+        button[type="submit"]:hover {
+          background-color: #d5dbe1; 
+          border-color: #0056b3;
+          color: #000;
+        }
+        form{
+          text-align: center;
+          padding: 0;
+          margin: 0;
+        }
     </style>
   </head>
   <body>
-    <div class="container">
-      <h2><%=cityName%></h2>
-      <h1>temperature : <%=tempAppeare%></h1>
-      <h3>temperature Feel : <%=tempFeels%></h3>
-      <h4>
-        <%=description%>
-      </h4>
-    </div>
-
-  </body>
+    <form id="refreshForm">
+        <div class="container">
+            <h2><%= cityName %></h2>
+            <h1>temperature : <%= tempAppeare %></h1>
+            <h3>temperature Feel : <%= tempFeels %></h3>
+            <h4><%= description %></h4>
+        </div>
+        <button type="submit">Refresh</button>
+    </form>
+</body>
+  
 </html>
