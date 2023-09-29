@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" / <script defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all/js">
+    <title>Weather app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap" rel="stylesheet">
+    <style type="text/css">
+      body{
+        margin :0;
+        padding:0;
+        background-image: url('https://i.pinimg.com/originals/20/e1/1c/20e11cea9fcc9a9fb5c07efd72afaae9.gif');
+
+         background-attachment: fixed;
+        background-size: cover;
+        background-size: 500px 470px;
+      
+      }
+      h2{
+        display: block;
+        margin:auto;
+        text-align: center;
+        font-family: 'Ubuntu';
+        font-size: 1.5rem;
+
+      }
+      h3{
+        text-align: center;
+        height:30px;
+        padding: 15px;
+        font-family: 'Montserrat';
+
+      }
+      h1{
+        text-align: center;
+        height:30px;
+        padding: 15px;
+        font-family: 'Montserrat';
+        font-size: 1.5rem;
+      }
+      .container{
+        width:60%;
+        height:40%;
+        margin:auto;
+        margin-top: 110px;
+
+      }
+      h4{
+        margin:auto;
+        text-align: center;
+        font-family: 'Ubuntu';
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2><%=cityName%></h2>
+      <h1>temperature : <%=tempAppeare%></h1>
+      <h3>temperature Feel : <%=tempFeels%></h3>
+      <h4>
+        <%=description%>
+      </h4>
+    </div>
+
+  </body>
+</html>

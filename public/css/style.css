@@ -1,0 +1,64 @@
+body{
+  margin :0;
+  padding:0;
+  background-image: url('https://i.pinimg.com/originals/e7/7a/60/e77a6068aa8bb2731e3b6d835c09c84c.gif');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+  background-size: cover;
+}
+.container{
+  width:20%;
+  height:40%;
+  margin:auto;
+  margin-top: 50px;
+
+}
+.containerTitle{
+  text-align: center;
+  height:30px;
+  padding: 15px;
+  font-family: 'Montserrat';
+  color: #42C2FF;
+
+  font-size: 1.5rem;
+}
+.cityInput{
+  display: block;
+  margin:auto;
+  text-align: center;
+  font-family: 'Ubuntu';
+  font-size: 1.2rem;
+}
+.submit{
+  display: block;
+  margin:auto;
+  margin-top: 40px;
+  font-family: 'Ubuntu';
+  font-size: 1.2rem;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.submit:hover{
+  background-color: grey;
+  color: #fff;
+}
+@media (max-width: 950px){
+  .containerTitle{
+    text-align: center;
+    height:30px;
+    padding: 15px;
+    font-family: 'Montserrat';
+    color: #42C2FF;
+    font-size: 1.5rem;
+   }
+   .container{
+     width: 40%;
+   }
+   body{
+     background-image: url('https://i.pinimg.com/originals/0e/f3/bb/0ef3bb66d9216fffcea9022628f7bb26.gif');
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+    background-size: cover;
+    
+   }
+}
