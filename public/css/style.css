@@ -33,14 +33,18 @@ body{
   display: block;
   margin:auto;
   margin-top: 40px;
-  font-family: 'Ubuntu';
+  font-family: 'Quicksand', sans-serif;
   font-size: 1.2rem;
-  border: 2px solid black;
   border-radius: 5px;
+  padding: 8px 12px;
+  background-color: #888aa5;
+  
 }
 .submit:hover{
   background-color: rgb(160, 157, 157);
   color: #fff;
+  transform: translateY(-5px);
+  transition: transform 0.4s ease;
 }
 @media (max-width: 950px){
   .containerTitle{
