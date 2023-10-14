@@ -18,12 +18,31 @@
         <div class="containerTitle">
           Weather Report
         </div>
-      <p>
+      <!-- <p>
          <input class="cityInput" type="text" name="cityName" placeholder="Name of The City">
       </p>
       <p>
           <button class="submit" type="submit">Submit</button>
-      </p>
+      </p> -->
+       <p>
+    <input class="cityInput" type="text" name="cityName" placeholder="Name of The City" oninput="validateInput()">
+  </p>
+  <p>
+    <button class="submit" type="submit" id="submitButton" disabled>Submit</button>
+  </p>
+
+  <script>
+    function validateInput() {
+      var cityNameInput = document.querySelector('.cityInput');
+      var submitButton = document.getElementById('submitButton');
+
+      if (cityNameInput.value.trim() === '') {
+        submitButton.disabled = true; // Disable the button if the input is empty or contains only whitespace.
+      } else {
+        submitButton.disabled = false; // Enable the button if there is input.
+      }
+    }
+  </script>
       </div>
 
     </form>
